@@ -12,8 +12,8 @@ import com.twilio.type.PhoneNumber;
 
 public class MakeCall extends HttpServlet {
     
-    public static final String ACCOUNT_SID = "Add Accound SID here";
-    public static final String AUTH_TOKEN = "Add Token here";
+    public static final String ACCOUNT_SID = "Add Accound SID here from twilio";
+    public static final String AUTH_TOKEN = "Add Token here from twilio";
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, URISyntaxException {
