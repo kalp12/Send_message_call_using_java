@@ -12,8 +12,8 @@ import com.twilio.type.PhoneNumber;
 
 public class MakeCall extends HttpServlet {
     
-    public static final String ACCOUNT_SID = "ACaad63cbb6b09fc1cfe8f910e45fd61bc";
-    public static final String AUTH_TOKEN = "24ca986cdfea79fd872e99fb36620ed9";
+    public static final String ACCOUNT_SID = "Add Accound SID here";
+    public static final String AUTH_TOKEN = "Add Token here";
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, URISyntaxException {
@@ -21,7 +21,7 @@ public class MakeCall extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
             String from = "+18646252400";
-            String to = "+917507499218";
+            String to = "+91750******";
 
             Call call;
             call = Call.creator(new PhoneNumber(to), new PhoneNumber(from),
